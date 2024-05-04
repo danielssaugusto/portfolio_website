@@ -99,7 +99,6 @@ main {
 
 /* .main-hero {
     background: var(--primary-light);
-
 } */
 
 .hero-container {
@@ -200,7 +199,6 @@ hr {
 .portfolio-container-main {
     margin-top: 3rem;
     column-count: 2;
-    
 }
 
 .portfolio-container {
@@ -211,6 +209,7 @@ hr {
     max-width: 1120px;
     padding: 3rem 2rem;
     margin: auto;
+    align-items: center;
 }
 
 .portfolio-header {
@@ -414,6 +413,16 @@ footer {
         gap: 3rem;
     }
 
+    #background-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 200vh;
+        height: auto;
+        z-index: -1;
+    }
+
     .video-message {
         margin: auto;
         font-size: 3rem;
@@ -458,5 +467,10 @@ footer {
 
     .portfolio-card-title {
         font-size: 1.25rem;
+    }
+
+    #background-video {
+        max-width: 100%;
+        height: auto;
     }
 }
