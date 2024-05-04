@@ -41,7 +41,11 @@
                     </div>
                 </header>
                 <div class="hero-image">
-                    <figure><img src="assets/wolf-profile.jpg" alt=""></figure>
+                    <picture>
+                        <source media="(max-width: 790px)" srcset="assets/wolf-profile-768px.png">
+                        <source media="(min-width: 791px)" srcset="assets/wolf-profile.jpg">
+                        <img src="assets/wolf-profile.jpg" alt="">
+                    </picture>
                 </div>
             </section>
         </div>

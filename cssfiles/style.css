@@ -103,7 +103,6 @@ main {
 } */
 
 .hero-container {
-
     max-width: 1120PX;
     height: 90vh;
 
@@ -193,7 +192,7 @@ hr {
     max-width: 30%;
 }
 
-.hero-image > figure > img {
+.hero-image > picture > img {
     width: 100%;
     border-radius: 0.5rem;
 }
@@ -364,4 +363,100 @@ footer {
     flex-direction: row;
     align-items: center;
     gap: 0.5rem;
+}
+
+
+@media screen and (max-width: 790px) {
+    body {
+        width: 768px;
+    }
+
+    .logotype {
+        font-size: 2.0rem;
+    }
+
+    nav {
+        padding: 1rem;
+    }
+
+    .menu > li {
+        display: none;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        gap: 2rem;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .hero-image {
+        max-width: 100%;
+        
+    }
+
+    .portfolio-container {
+        padding: 2rem 1rem;
+        height: auto;
+    }
+
+    .portfolio-container-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio-card {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 690px;
+        height: 250px;
+        gap: 3rem;
+    }
+
+    .video-message {
+        margin: auto;
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .video-image {
+        width: 40rem;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logotype {
+        font-size: 1.5rem;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu > li > a {
+        padding: 0.3rem;
+    }
+
+    .hero-profile-subtitle {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .portfolio-title {
+        font-size: 1.5rem;
+    }
+
+    .portfolio-card {
+        padding: 1rem;
+    }
+
+    .portfolio-card-title {
+        font-size: 1.25rem;
+    }
 }
