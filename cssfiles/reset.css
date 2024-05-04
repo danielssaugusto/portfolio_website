@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Jersey+15&family=Lancelot&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font: inherit;
+    color: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    text-decoration: none; /* tag <a> */
+    list-style: none; /* tag <ul> */
+}
+
+:root {
+     /* Dark mode */
+    --primary-normal: #363B6B;
+    --primary-dark: #dadadc;
+    --primary-light: #f8f8f8;
+
+    --secondary-normal: #3043ee;
+    --secondary-dark: #1f30c8;;
+    --secondary-light: #0118EB;
+
+    --color-default: #06274b;
+    --highlights-color: #035185;
+
+    /* Google Fonts */
+    --font-title: "Lancelot";
+    --font-subtitle: "Montsserat", sans-serif;
+    --font-highlight: "Epilogue", sans-serif;
+    --font-default: "Inter", sans-serif;
+    --font-decoration: "Jersey 15", sans-serif;
+}
+
+/* Light mode */
+.light-mode {
+    --primary-normal: #abbdf2;
+    --primary-dark: #02020b;
+    --primary-light: #1f1f2d;
+
+    --secondary-normal: #2030C0;
+    --secondary-dark:#717ef4;
+    --secondary-light: #8a95fd;
+
+    --color-default: #ffffffdd;
+    --highlights-color: #ffff00;
+}
