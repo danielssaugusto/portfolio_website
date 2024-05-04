@@ -205,11 +205,9 @@ hr {
     display: flex;
     flex-direction: column;
     height: 100vh;
-
-    max-width: 1120px;
-    padding: 3rem 2rem;
-    margin: auto;
-    align-items: center;
+    justify-content: center;
+    max-width: 1820px;
+    margin: 0% 15%;
 }
 
 .portfolio-header {
@@ -472,5 +470,13 @@ footer {
     #background-video {
         max-width: 100%;
         height: auto;
+    }
+
+    .video-image {
+        margin: auto;
+    }
+
+    .video-message {
+        margin: auto;
     }
 }
