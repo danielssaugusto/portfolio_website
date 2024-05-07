@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const body = document.body;
 
     toggleButton.addEventListener('click', function() {
-        body.classList.toggle('light-mode');
-        if (body.classList.contains('light-mode')) {
+        body.classList.toggle('dark-mode');
+        if (body.classList.contains('dark-mode')) {
             toggleButton.textContent = '☀️';
         } else {
             toggleButton.textContent = '🌙';

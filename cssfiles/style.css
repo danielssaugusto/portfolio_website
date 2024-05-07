@@ -7,15 +7,17 @@ html {
 
 body {
     background: var(--primary-light);
-    color: #FFFFFF;
+    color: var(--secondary-dark);
+}
+
+header {
+    max-width: 1320px;
+    margin: auto;
+    padding: 1.5rem 2.5rem;
 }
 
 /* HEADER */
 nav {
-    max-width: 1820px;
-    margin: auto;
-    padding: 1.5rem 2.5rem;
-
     /* Flexbox */
     display: flex;
     flex-direction: row; /* default */
@@ -23,51 +25,57 @@ nav {
     align-items: center;
 }
 
-li {
-    display: flex;
-    align-items: center;
-}
-
 .logotype {
-    font-family: var(--font-title);
+    font-family: var(--font-logo);
     font-size: 2rem;
     font-weight: 600;
     text-transform: uppercase;
-    color: var(--color-default);
 }
 
 .menu {
     display: flex;
     flex-direction: row; /* default */
     gap: 1.5rem;
-    color: var(--color-default);
     text-transform: uppercase;
     font-weight: 800;
 }
 
+li {
+    display: flex;
+    align-items: center;
+}
+
 .menu > li > a {
+    display: inline-block;
+    position: relative;
     padding: 0.5rem;
-    border-radius: 0.3rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    color: var(--color-default);
     
-    &:hover {
-        background-color: var(--secondary-normal);
-        color: var(--primary-light);
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 0.15rem;
+        background-color: var(--secondary-dark);
+        transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+        width: 80%;
     }
 }
 
 .button-container {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
     justify-items: center;
 }
 
 .button-theme {
-    background-color: var(--primary-dark);
-    border: none;
-    border-radius: 20rem;
+    background-color: transparent;
+    border-radius: 25rem;
+    border: 0.25rem solid var(--secondary-dark);
     padding: 0.5rem;
 
     &:hover {
@@ -75,20 +83,39 @@ li {
     }
 }
 
-.github {
-    background-color: var(--secondary-dark);
-    border-color: var(--secondary-dark);
-    padding: 1rem;
-    border: 0.1rem solid;
-    border-radius: 0.5rem;
-    font-weight: bold;
-    color: var(--primary-light);
-    transition: background-color 0.3s ease, color 0.3s ease;
+.header-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    &:hover {
-        background-color: transparent;
-        color: var(--secondary-light);
+.nav-profile {
+    max-width: 1180px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: var(--font-title);
+}
+
+.nav-profile-left {
+    & > h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
     }
+
+    & > span {
+        font-size: 3rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+
+
+
+
+.nav-picture > img {
+    width: 20rem;
+    border-radius: 25rem;
 }
 
 /* MAIN */
@@ -96,10 +123,6 @@ main {
     display: flex;
     flex-direction: column;
 }
-
-/* .main-hero {
-    background: var(--primary-light);
-} */
 
 .hero-container {
     max-width: 1120PX;
@@ -187,14 +210,6 @@ hr {
     }
 }
 
-.hero-image {
-    max-width: 30%;
-}
-
-.hero-image > picture > img {
-    width: 100%;
-    border-radius: 0.5rem;
-}
 
 .portfolio-container-main {
     margin-top: 3rem;
