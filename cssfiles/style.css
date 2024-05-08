@@ -6,14 +6,14 @@ html {
 }
 
 body {
+    max-width: 1920px;
     background: var(--primary-light);
-    color: var(--secondary-dark);
+    color: var(--secondary-normal);
 }
 
 header {
-    max-width: 1320px;
     margin: auto;
-    padding: 1.5rem 2.5rem;
+    background-color: var(--primary-dark);
 }
 
 /* HEADER */
@@ -23,6 +23,7 @@ nav {
     flex-direction: row; /* default */
     justify-content: space-between;
     align-items: center;
+    padding: 1.5rem 2.5rem;
 }
 
 .logotype {
@@ -30,6 +31,7 @@ nav {
     font-size: 2rem;
     font-weight: 600;
     text-transform: uppercase;
+    text-shadow: 0.05rem 0.05rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 .menu {
@@ -38,6 +40,7 @@ nav {
     gap: 1.5rem;
     text-transform: uppercase;
     font-weight: 800;
+    margin-left: 58%;
 }
 
 li {
@@ -49,6 +52,7 @@ li {
     display: inline-block;
     position: relative;
     padding: 0.5rem;
+    text-shadow: 0.05rem 0.05rem 0.5rem rgba(0, 0, 0, 0.2);
     
     &::after {
         content: '';
@@ -75,11 +79,14 @@ li {
 .button-theme {
     background-color: transparent;
     border-radius: 25rem;
-    border: 0.25rem solid var(--secondary-dark);
-    padding: 0.5rem;
+    border: 0.2rem solid var(--secondary-normal);
+    padding: 0.25rem;
+    transition: background-color 0.3s ease;
+    box-shadow: 0.05rem 0.05rem 0.5rem rgba(0, 0, 0, 0.2);
 
     &:hover {
         cursor: pointer;
+        background-color: var(--secondary-normal);
     }
 }
 
@@ -90,14 +97,21 @@ li {
 }
 
 .nav-profile {
-    max-width: 1180px;
     display: flex;
     flex-direction: row;
     align-items: center;
     font-family: var(--font-title);
+    text-shadow: 0.05rem 0.05rem 0.5rem rgba(0, 0, 0, 0.2);
+    margin-top: 2rem;
+    gap: 10rem;
+    padding: 2.2rem;
 }
 
 .nav-profile-left {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+
     & > h1 {
     font-size: 2.5rem;
     font-weight: 300;
@@ -108,15 +122,92 @@ li {
         font-weight: 600;
         text-transform: uppercase;
     }
+
+    & > hr {
+        border: none;
+        height: 0.15rem;
+        width: 10rem;
+        background-color: var(--secondary-dark);
+        margin: 0.5rem 0rem;
+    }
 }
 
+.nav-subtitle {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
 
+.nav-picture {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 
+    & > img {
+        width: 20rem;
+        border-radius: 25rem;
+        margin: 0 auto;
+        box-shadow: 0.05rem 0.05rem 0.5rem rgba(0, 0, 0, 0.2);
+    }
+    
+}
 
-.nav-picture > img {
-    width: 20rem;
+.hero-container {
+    background-color: var(--primary-light);
+    color: var(--secondary-dark);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem 2.5rem;
+
+    & > .quote {
+        font-weight: 600;
+        text-align: left;
+        padding-right: 5rem;
+        align-items: center;
+        margin-top: 5rem;
+    }
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+
+    & > li > a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--secondary-dark);
+        color: var(--secondary-light);
+        padding: 0.5rem;
+        border-radius: 25rem;
+    }
+}
+
+.button-hero > button {
+    margin-right: 25rem;
+    color: var(--secondary-dark);
+    background-color: transparent;
+    border: 0.2rem solid var(--secondary-dark);
     border-radius: 25rem;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+    box-shadow: 0.05rem 0.05rem 0.5rem rgba(0, 0, 0, 0.2);
+
+    &:hover {
+        background-color: var(--secondary-dark);
+        color: var(--secondary-light);
+    }
+
 }
+
+
+
 
 /* MAIN */
 main {
@@ -124,21 +215,6 @@ main {
     flex-direction: column;
 }
 
-.hero-container {
-    max-width: 1120PX;
-    height: 90vh;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 6rem;
-
-    padding: 0rem 2rem;
-    margin: auto;
-
-    overflow: clip;
-}
 
 .hero-profile {
     display: flex;
@@ -190,9 +266,6 @@ hr {
     text-align: right;
 }
 
-.button-hero {
-    margin: auto;
-}
 
 .button {
     border: none;
