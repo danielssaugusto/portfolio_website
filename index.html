@@ -16,7 +16,7 @@
         <nav>
             <span class="logotype"><a href="index.html">groenendael</a></span>
             <ul class="menu">
-                <li><a href="#">About</a></li>
+                <li><a href="#about-container">About</a></li>
                 <li><a href="#">Contacts</a></li>
                 <li><a href="https://github.com/danielssaugusto" target="_blank">GitHub</a></li>
             </ul>
@@ -30,7 +30,8 @@
                     <h1>hi! i'm</h1>
                     <span class="nav-profile-subtitle">software engineer</span>
                     <hr>
-                    <p class="nav-subtitle">Estudante de Engenharia de Software transferido do <br>curso de Ciência da Computação, tem sido uma <br>jornada de ampliação de conhecimento.</p>
+                    <p class="nav-subtitle">As a Software Engineering student who transitioned from the Computer Science program, it has been an enriching journey of knowledge expansion</p>
+                    <!-- <p class="nav-subtitle">Estudante de Engenharia de Software transferido do <br>curso de Ciência da Computação, tem sido uma <br>jornada de ampliação de conhecimento.</p> -->
                 </div>
                 <picture class="nav-picture">
                     <img src="assets/wolf-profile.jpg" alt="wolf photo">
@@ -40,9 +41,9 @@
     
         <div class="hero-container">
             <ul class="social-icons">
-                <li><a href="https://twitter.com/" target="_blank"><i class="devicon-twitter-original"></i></a></li>
-                <li><a href="https://github.com/danielssaugusto" target="_blank"><i class="devicon-github-original"></i></a></li>
-                <li><a href="https://twitter.com/" target="_blank"><i class="devicon-twitter-original"></i></a></li>
+                <li class="icon"><a href="https://twitter.com/" target="_blank"><i class="devicon-twitter-original"></i></a></li>
+                <li class="icon"><a href="https://github.com/danielssaugusto" target="_blank"><i class="devicon-github-original"></i></a></li>
+                <li class="icon"><a href="https://twitter.com/" target="_blank"><i class="devicon-twitter-original"></i></a></li>
             </ul>
             <div class="button-hero">
                 <button type="button" class="button">know more</button>
@@ -53,15 +54,19 @@
     
 
     <main>
-        <section class="about-container">
+        <!-- <section>
             <div class="viewport">
-                <div class="video-parallax">
-                    <video autoplay loop muted src="assets/background-hightech.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                <div class="parallax-container">
+                    <div class="image-parallax">
+                        <picture>
+                            <img src="assets/image-ciri-parallax.jpeg" alt="Ciri - The Witcher">
+                        </picture>
+                    </div>
                 </div>
             </div>
+        </section> -->
 
+        <section class="about-container" id="about-container">
             <div class="about-content">
                 <picture class="about-picture">
                     <img src="assets/batman-arkham-knight.jpeg" alt="picture profile">
@@ -70,15 +75,15 @@
                     <span>discover</span>
                     <h2>about me</h2>
                     <hr>
-                    <p>My name is Daniel Augusto. I’m a Software Engineer Student, I’m very passionate and dedicated to my work. With 1 year experience as a professional Full Stack Developer, I have acquired the skills necessary to build great and premium websites.</p>
+                    <p>My name is Daniel Augusto. I'm a Software Engineer Student, I'm very passionate and dedicated to my work. With 1 year experience as a professional Full Stack Developer, I have acquired the skills necessary to build great and premium websites.</p>
                     <h2>Features</h2>
-                    <ul>
-                        <li>python</li>
-                        <li>python</li>
-                        <li>python</li>
-                        <li>python</li>
-                        <li>python</li>
-                        <li>python</li>
+                    <ul class="features-icon">
+                        <li class="icon">python</li>
+                        <li class="icon">C/C++</li>
+                        <li class="icon">SQL</li>
+                        <li class="icon">HTML5</li>
+                        <li class="icon">CSS3</li>
+                        <li class="icon">JavaScript</li>
                     </ul>
                 </div>
             </div>

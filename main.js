@@ -13,3 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var video = document.getElementById('background-video');
     video.playbackRate = 0.8;
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems);
+});
