@@ -358,18 +358,12 @@ main {
 
 
 
-.portfolio-container-main {
-    margin-top: 3rem;
-    column-count: 2;
-}
 
 .portfolio-container {
     display: flex;
     flex-direction: column;
     height: 100vh;
     justify-content: center;
-    max-width: 1820px;
-    margin: 0% 15%;
 }
 
 .portfolio-header {
@@ -384,12 +378,25 @@ main {
     text-transform: uppercase;
 }
 
+.blue {
+    color: var(--primary-light);
+}
+
 .portfolio-title {
     font-family: var(--font-subtitle);
     font-weight: 700;
     font-size: 2rem;
     color: var(--color-default);
     margin-top: 1rem;
+}
+
+
+
+
+.portfolio-container-main {
+    margin-top: 3rem;
+    margin: 0% 15%;
+    column-count: 2;
 }
 
 .portfolio-card-container {
