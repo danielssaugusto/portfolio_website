@@ -169,6 +169,11 @@ li {
         padding-right: 5rem;
         align-items: center;
         margin-top: 5rem;
+        color: var(--color-default);
+        font-family: var(--font-subtitle);
+        font-size: 1.2rem;
+        font-style: italic;
+        margin-bottom: 2rem;
     }
 }
 
@@ -214,7 +219,7 @@ li {
     }
 }
 
-.button-hero > button {
+.button-hero > a > button {
     margin-right: 25rem;
     color: var(--secondary-dark);
     background-color: transparent;
@@ -223,10 +228,13 @@ li {
     padding: 0.5rem;
     transition: background-color 0.3s ease;
     box-shadow: 0.05rem 0.05rem 0.5rem rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    font-weight: bold;
 
     &:hover {
         background-color: var(--secondary-dark);
-        color: var(--secondary-light);
+        color: var(--primary-light);
+        cursor: pointer;
     }
 }
 
@@ -348,73 +356,6 @@ main {
 
 
 
-
-.hero-profile {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.hero-profile-subtitle {
-    font-family: var(--font-highlight);
-    font-size: 2.5rem;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-.blue {
-    color: var(--secondary-light);
-}
-
-.yellow {
-    color: var(--highlights-color);
-}
-
-h1 {
-    color: var(--color-default);
-    font-family: var(--font-subtitle);
-    font-size: 2.5rem;
-    font-weight: 600;
-    text-transform: capitalize;
-}
-
-hr {
-    border-color: var(--color-default);
-}
-
-.hero-subtitle {
-    color: var(--color-default);
-    font-size: 1.25rem;
-    font-weight: 400;
-    margin-bottom: 1rem;
-}
-
-.quote {
-    color: var(--color-default);
-    font-family: var(--font-subtitle);
-    font-size: 1.2rem;
-    font-weight: 400;
-    font-style: italic;
-    margin-bottom: 2rem;
-    text-align: right;
-}
-
-
-.button {
-    border: none;
-    padding: 1rem 1.5rem;
-    border-radius: 0.5rem;
-    background-color: var(--secondary-dark);
-    transition: background-color 0.3s ease, color 0.3s ease;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 4rem;
-
-    &:hover {
-        background-color: var(--secondary-light);
-        cursor: pointer;
-    }
-}
 
 
 .portfolio-container-main {
