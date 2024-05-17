@@ -116,6 +116,7 @@ li {
     h1 {
         font-size: 2.5rem;
         font-weight: 300;
+        text-transform: capitalize;
     }
 
     span {
@@ -373,7 +374,8 @@ main {
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 1rem 10rem;
+    margin-top: 1rem;
+    margin: 0rem 10rem;
 }
 
 .blue {
@@ -385,7 +387,7 @@ main {
     font-weight: 700;
     font-size: 2rem;
     color: var(--color-default);
-    margin-top: 1rem;
+    margin: 0rem 10rem;
 }
 
 
