@@ -329,35 +329,30 @@ main {
     justify-content: space-between;
     margin-top: 1rem;
     gap: 2rem;
-
-    li {
-        background-color: var(--secondary-dark);
-        padding: 0.8rem;
-        width: 15rem;
-        border: 0.2rem solid var(--secondary-dark);
-        border-radius: 25rem;
-        justify-content: center;
-
-        font-size: 1.2rem;
-        font-family: var(--font-default);
-        font-weight: 600;
-        color: var(--primary-light);
-        text-transform: capitalize;       
-    }
-
-    .icon:hover {
-        background-color: var(--secondary-light);
-        border: 0.2rem solid var(--secondary-dark);
-        color: var(--secondary-dark);
-        font-weight: 800;
-        cursor: pointer;
-    }
 }
 
+.features-icon li {
+    background-color: var(--secondary-dark);
+    padding: 0.5rem;
+    width: 15rem;
+    border: 0.2rem solid var(--secondary-dark);
+    border-radius: 25rem;
+    justify-content: center;
 
+    font-size: 1.2rem;
+    font-family: var(--font-default);
+    font-weight: 600;
+    color: var(--primary-light);
+    text-transform: capitalize;       
+}
 
-
-
+.features-icon .icon:hover {
+    background-color: var(--secondary-light);
+    border: 0.2rem solid var(--secondary-dark);
+    color: var(--secondary-dark);
+    font-weight: 800;
+    cursor: pointer;
+}
 
 .portfolio-container {
     display: flex;
@@ -370,12 +365,15 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    margin: 0;
 }
 
 .highlight {
     font-family: var(--font-highlight);
     font-size: 1rem;
+    font-weight: bold;
     text-transform: uppercase;
+    margin: 1rem 10rem;
 }
 
 .blue {
@@ -389,6 +387,13 @@ main {
     color: var(--color-default);
     margin-top: 1rem;
 }
+
+
+
+
+
+
+
 
 
 
