@@ -537,7 +537,7 @@ main {
     
         .quote {
             font-weight: 600;
-            text-align: left;
+            text-align: center;
             align-items: center;
             color: var(--color-default);
             font-family: var(--font-subtitle);
@@ -594,6 +594,13 @@ main {
         gap: 1.5rem;
         align-items: center;
     }
+
+    .button-container {
+        gap: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     
     .highlight {
         margin: 0;
@@ -602,6 +609,173 @@ main {
     .portfolio-title {
         font-size: 1.5rem;
         margin: 0;
+    }
+
+    .card-container-main {
+        flex-direction: column;
+        height: 20rem;
+    }
+
+    .card-container > img {
+        max-width: 40rem;
+    }
+}
+
+/* RESOLUÇÃO 480PX */
+@media screen and (max-width: 480px) {
+    .menu li {
+        display: none;
+    }
+
+    .header-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--font-title);
+        text-shadow: 0.05rem 0.05rem 0.5rem rgba(0, 0, 0, 0.2);
+        margin-top: 1.5rem;
+        padding: 2rem;
+    }
+    
+    .nav-profile-left {
+        display: flex;
+        flex-direction: column;
+        width: 25rem;
+        padding: 1rem;
+        text-align: center;
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            text-transform: capitalize;
+        }
+    
+        span {
+            font-size: 2.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    
+        hr {
+            border: none;
+            height: 0.15rem;
+            width: 80%;
+            background-color: var(--secondary-normal);
+        }
+    }
+    
+    .nav-subtitle {
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        font-weight: 400;
+        padding: 1rem;
+    }
+    
+    .nav-picture {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    
+        img {
+            max-width: 15rem;
+            border-radius: 25rem;
+            margin: 0 auto;
+            box-shadow: 0.05rem 0.05rem 0.5rem rgba(0, 0, 0, 0.2);
+        }
+        
+    }
+
+    .hero-container {
+        background-color: var(--primary-light);
+        color: var(--secondary-dark);
+        display: flex;
+        flex-direction: column;
+    
+        .quote {
+            font-weight: 600;
+            text-align: center;
+            align-items: center;
+            color: var(--color-default);
+            font-family: var(--font-subtitle);
+            font-size: 1rem;
+            font-style: italic;
+            margin: 0;
+        }
+    }
+    
+    .social-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 1.5rem;
+    
+        a {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--secondary-dark);
+            color: var(--secondary-light);
+            padding: 1rem;
+            border-radius: 25rem;
+            transition: transform 0.3s ease;
+        }
+    
+        li > a:hover {
+            transform: rotate(-10deg);
+        }
+    
+        @keyframes shake {
+            10% {
+                transform: rotate(15deg);
+            }
+            20% {
+                transform: rotate(-15deg);
+            }
+            30% {
+                transform: rotate(15deg);
+            }
+            40% {
+                transform: rotate(-15deg);
+            }
+            50% {
+                transform: rotate(0deg);
+            }
+        }
+    }
+
+    .social-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .button-container {
+        gap: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .highlight {
+        margin: auto;
+    }
+
+    .portfolio-title {
+        font-size: 1rem;
+        margin: auto;
     }
 
     .card-container-main {
