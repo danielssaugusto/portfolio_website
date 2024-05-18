@@ -12,6 +12,15 @@
     list-style: none; /* tag <ul> */
 }
 
+img {
+    width: 100%;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
 :root {
      /* Light mode */
     --primary-dark: #D9A679;
