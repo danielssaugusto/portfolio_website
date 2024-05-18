@@ -473,14 +473,14 @@ main {
         align-items: center;
         font-family: var(--font-title);
         text-shadow: 0.05rem 0.05rem 0.5rem rgba(0, 0, 0, 0.2);
-        margin-top: 1.5rem;
-        padding: 2rem;
+        margin: 0rem;
+        padding: 0rem;
     }
     
     .nav-profile-left {
         display: flex;
         flex-direction: column;
-        width: 30rem;
+        width: 15rem;
         padding: 1rem;
         text-align: center;
         
@@ -519,6 +519,7 @@ main {
         justify-content: center;
         align-items: center;
         height: 100%;
+        padding: 1rem;
     
         img {
             max-width: 20rem;
@@ -647,18 +648,18 @@ main {
     .nav-profile-left {
         display: flex;
         flex-direction: column;
-        width: 25rem;
-        padding: 1rem;
+        width: 22rem;
+        padding: 0.5rem;
         text-align: center;
         
         h1 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 300;
             text-transform: capitalize;
         }
     
         span {
-            font-size: 2.2rem;
+            font-size: 2rem;
             font-weight: 600;
             text-transform: uppercase;
         }
@@ -677,7 +678,6 @@ main {
         line-height: 1.5rem;
         text-align: center;
         font-weight: 400;
-        padding: 1rem;
     }
     
     .nav-picture {
@@ -686,7 +686,7 @@ main {
         justify-content: center;
         align-items: center;
         height: 100%;
-        padding-bottom: 1rem;
+        padding: 1rem;
     
         img {
             max-width: 15rem;
@@ -709,7 +709,7 @@ main {
             align-items: center;
             color: var(--color-default);
             font-family: var(--font-subtitle);
-            font-size: 1rem;
+            font-size: 1.2rem;
             font-style: italic;
             margin: 0;
         }
@@ -728,7 +728,7 @@ main {
             align-items: center;
             background-color: var(--secondary-dark);
             color: var(--secondary-light);
-            padding: 1rem;
+            padding: 0.5rem;
             border-radius: 25rem;
             transition: transform 0.3s ease;
         }
@@ -772,11 +772,13 @@ main {
     
     .highlight {
         margin: auto;
+        text-align: center;
     }
 
     .portfolio-title {
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin: auto;
+        text-align: center;
     }
 
     .card-container-main {
