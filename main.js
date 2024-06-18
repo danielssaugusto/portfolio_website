@@ -33,11 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const confirmed = confirm('Do you want to change the window?');
         
         if (confirmed) {
-            // Se o usuário confirmou, redireciona para o GitHub
             window.location.href = githubButton.href;
-        } else {
-            // Se o usuário cancelou, não faz nada
-            // Ou você pode adicionar lógica adicional aqui, se necessário
         }
     });
 });
