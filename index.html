@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="cssfiles/reset.css">
-    <link rel="stylesheet" type="text/css" href="cssfiles/style.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <script src="main.js"></script>
     <link rel="shortcut icon" href="assets/logo-wolf.png" type="image/x-icon"> <!-- Favicon -->
     <title>Groenendael</title>
     <meta name="description" content="Descrição do site">
@@ -18,7 +17,7 @@
             <ul class="menu">
                 <li><a href="#about-container">About</a></li>
                 <li><a href="#">Contacts</a></li>
-                <li><a href="https://github.com/danielssaugusto" target="_blank">GitHub</a></li>
+                <li><a target="_blank" id="github" href="https://github.com/danielssaugusto">GitHub</a></li>
             </ul>
             <div class="button-container">
                 <button class="button-theme" id="theme-toggle">🌙</button>
@@ -129,19 +128,6 @@
             </section>
 
         </section>
-
-        <section>
-            <div class="video-container">
-                <video autoplay muted loop id="background-video">
-                    <source media="(max-width: 790px)" src="assets/background-world-tech.mp4" type="video/mp4">
-                    <source media="(min-width: 791px)" src="assets/background-hightech.mp4" type="video/mp4">
-                    Seu navegador não suporta vídeos HTML5.
-                </video>
-                <p class="video-message">Página em desenvolvimento</p>
-                <img class="video-image" src="assets/mario-world.jpg" alt="">
-            </div>
-        </section>
-
     </main>
 
     <footer>
@@ -150,5 +136,7 @@
             <li><a href="https://twitter.com/" target="_blank"><i class="devicon-twitter-original"></i></a></li>
         </ul>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
