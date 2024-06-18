@@ -269,6 +269,20 @@ main {
     color: var(--secondary-dark);
 }
 
+.section-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.line {
+    height: 0.15rem;
+    width: 60rem;
+    background-color: var(--secondary-dark);
+    border-color: rgb(232, 230, 230);
+}
+
 /*.viewport {
     width: 100%;
     overflow: hidden;
