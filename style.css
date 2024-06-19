@@ -15,6 +15,7 @@ body {
 header {
     margin: auto;
     background-color: var(--primary-dark);
+    height: 100vh;
 }
 
 /* HEADER */
@@ -494,7 +495,6 @@ main {
     .nav-profile-left {
         display: flex;
         flex-direction: column;
-        width: 15rem;
         padding: 1rem;
         text-align: center;
         
@@ -620,6 +620,11 @@ main {
     .highlight {
         margin: 0;
     }
+    
+    .line {
+        height: 0.15rem;
+        width: 20rem;
+    }
 
     .portfolio-title {
         font-size: 1.5rem;
@@ -673,7 +678,7 @@ main {
         }
     
         span {
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 600;
             text-transform: uppercase;
         }
@@ -688,7 +693,7 @@ main {
     
     .nav-subtitle {
         margin-top: 1.5rem;
-        font-size: 1.5rem;
+        font-size: 1rem;
         line-height: 1.5rem;
         text-align: center;
         font-weight: 400;
@@ -723,7 +728,7 @@ main {
             align-items: center;
             color: var(--color-default);
             font-family: var(--font-subtitle);
-            font-size: 1.2rem;
+            font-size: 0.8rem;
             font-style: italic;
             margin: 0;
         }
@@ -787,6 +792,11 @@ main {
     .highlight {
         margin: auto;
         text-align: center;
+    }
+
+    .line {
+        height: 0.15rem;
+        width: 20rem;
     }
 
     .portfolio-title {
