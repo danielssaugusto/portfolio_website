@@ -173,7 +173,7 @@ li {
         margin-bottom: 2rem;
         margin-top: 5rem;
         width: 25rem;
-        margin-left: 60vh;
+        margin-left: 10vh;
     }
 }
 
@@ -323,6 +323,8 @@ main {
 }
 
 .about-picture > img {
+    width: 20rem;
+    margin-right: 2rem;
     border-radius: 0.5rem;
     box-shadow: 0.05rem 0.05rem 0.5rem rgba(0, 0, 0, 0.2);
 }
@@ -354,10 +356,7 @@ main {
 }
 
 .features-icon {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    column-count: 2;
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -370,6 +369,7 @@ main {
     border-radius: 25rem;
     justify-content: center;
     margin-left: 10%;
+    margin-bottom: 2rem;
 
     font-size: 1.2rem;
     font-family: var(--font-default);
@@ -471,6 +471,10 @@ main {
 }
 
 @media screen and (max-width: 758px) {
+    body {
+        width: 100vh;
+    }
+
     .menu li {
         display: none;
     }
@@ -636,7 +640,7 @@ main {
     }
 
     .portfolio-container {
-        margin: 0rem 5rem;
+        margin: 0rem 2rem;
         height: auto;
     }
 
@@ -662,6 +666,10 @@ main {
 
 /* RESOLUÇÃO 480PX */
 @media screen and (max-width: 480px) {
+    body {
+        width: 100vh;
+    }
+
     .menu li {
         display: none;
     }
@@ -829,7 +837,11 @@ main {
     }
 
     .features-icon {
-        margin-bottom: 4rem; /* Espaçamento entre os ícones */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 0rem; /* Espaçamento entre os ícones */
+        
 
         li {
             font-size: 1rem;
