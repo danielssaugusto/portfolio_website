@@ -79,8 +79,8 @@ li {
 .button-theme {
     background-color: transparent;
     border-radius: 25rem;
-    border: 0.2rem solid var(--secondary-normal);
-    padding: 0.25rem;
+    border: 0.1rem solid var(--secondary-normal);
+    padding: 0.25rem 1rem;
     transition: background-color 0.3s ease;
     box-shadow: 0.05rem 0.05rem 0.5rem rgba(0, 0, 0, 0.2);
 
@@ -635,6 +635,7 @@ main {
     }
     
     .line {
+        margin-top: 10rem;
         height: 0.15rem;
         width: 20rem;
     }
