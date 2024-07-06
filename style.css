@@ -1,5 +1,6 @@
 @import url(reset.css);
 
+/* STYLE: INDEX.HTML */
 html {
     font-family: var(--font-default);
     font-weight: 500;
@@ -12,10 +13,9 @@ body {
     overflow-x: hidden;
 }
 
-header {
+.nav-container {
     margin: auto;
     background-color: var(--primary-dark);
-    height: 100vh;
 }
 
 /* HEADER */
@@ -24,7 +24,7 @@ nav {
     display: flex;
     flex-direction: row; /* default */
     justify-content: space-between;
-    padding: 1.5rem 2.5rem;
+    padding: 0.5rem 1rem;
 }
 
 .logotype {
@@ -60,7 +60,7 @@ li {
         left: 0;
         bottom: 0;
         width: 0;
-        height: 0.15rem;
+        height: 0.12rem;
         background-color: var(--secondary-normal);
         transition: width 0.3s ease;
     }
@@ -83,7 +83,7 @@ li {
     padding: 0.25rem 1rem;
     transition: background-color 0.3s ease;
     box-shadow: 0.05rem 0.05rem 0.5rem rgba(0, 0, 0, 0.2);
-
+    
     &:hover {
         cursor: pointer;
         background-color: var(--secondary-normal);
@@ -91,9 +91,8 @@ li {
 }
 
 .header-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: auto;
+    background-color: var(--primary-dark);
 }
 
 .nav-profile {
@@ -111,19 +110,19 @@ li {
     display: flex;
     flex-direction: column;
     width: 30rem;
-
+    
     h1 {
         font-size: 2.5rem;
         font-weight: 300;
         text-transform: capitalize;
     }
-
+    
     span {
         font-size: 3rem;
         font-weight: 600;
         text-transform: uppercase;
     }
-
+    
     hr {
         border: none;
         height: 0.15rem;
@@ -134,7 +133,6 @@ li {
 }
 
 .nav-subtitle {
-    margin-top: 1.5rem;
     font-size: 1rem;
     line-height: 1.5rem;
 }
@@ -145,7 +143,7 @@ li {
     justify-content: center;
     align-items: center;
     height: 100%;
-
+    
     img {
         max-width: 20rem;
         border-radius: 25rem;
@@ -160,7 +158,7 @@ li {
     color: var(--secondary-dark);
     display: flex;
     flex-direction: row;
-    padding: 2.5rem 2.5rem;
+    padding: 1rem 2.5rem;
 
     .quote {
         font-weight: 600;
@@ -279,9 +277,8 @@ main {
 
 .line {
     height: 0.15rem;
-    width: 60rem;
+    width: 60%;
     background-color: var(--secondary-dark);
-    border-color: rgb(232, 230, 230);
 }
 
 .about-picture {
@@ -612,8 +609,12 @@ footer {
     }
 
     .about-container {
-        margin-top: 15rem;
+        margin-top: 2rem;
         height: auto;
+    }
+
+    .about-content {
+        margin: 2rem 3rem;
     }
 
     .about-picture {
@@ -625,18 +626,17 @@ footer {
     }
     
     .line {
-        margin-top: 10rem;
         height: 0.15rem;
         width: 20rem;
     }
 
     .portfolio-container {
-        margin: 0rem 2rem;
+        margin: 0rem 3rem;
         height: auto;
     }
 
     .portfolio-header {
-        height: 10rem;
+        height: 5rem;
         margin-top: 4rem;
     }
 
