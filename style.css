@@ -19,7 +19,7 @@ body {
 }
 
 /* HEADER */
-nav {
+.nav-menu {
     /* Flexbox */
     display: flex;
     flex-direction: row; /* default */
@@ -51,7 +51,7 @@ li {
 .menu > li > a {
     display: inline-block;
     position: relative;
-    padding: 0.5rem;
+    padding: 0.2rem 0.5rem;
     text-shadow: 0.05rem 0.05rem 0.5rem rgba(0, 0, 0, 0.2);
     
     &::after {
@@ -160,7 +160,7 @@ li {
     color: var(--secondary-dark);
     display: flex;
     flex-direction: row;
-    padding: 2.5rem 2.5rem;
+    padding: 2.5rem 2.5rem;    
 
     .quote {
         font-weight: 600;
@@ -173,7 +173,7 @@ li {
         margin-bottom: 2rem;
         margin-top: 5rem;
         width: 25rem;
-        margin-left: 10vh;
+        margin-left: 50vh;
     }
 }
 
@@ -221,12 +221,13 @@ li {
 
 .button-hero > a > button {
     margin: auto;
+    margin-left: 10rem;
     color: var(--secondary-dark);
     background-color: transparent;
     border: 0.2rem solid var(--secondary-dark);
     border-radius: 25rem;
     padding: 0.8rem;
-    text-wrap: nowrap;
+    overflow-wrap: normal;
     transition: background-color 0.3s ease;
     box-shadow: 0.05rem 0.05rem 0.5rem rgba(0, 0, 0, 0.2);
     text-transform: uppercase;
@@ -461,10 +462,10 @@ footer {
     gap: 0.5rem;
 }
 
-/* SCREENS MAX WIDTH 758PX */
+/* SCREENS MAX WIDTH 1120PX */
 @media screen and (max-width: 1120px) {
     .menu li {
-        display: none;
+        display: flex;
     }
 
     .header-main {
@@ -657,8 +658,14 @@ footer {
     }
 }
 
+@media screen and (max-width: 700px) {
+    .menu li {
+        display: none;
+    }
+
+
 /* SCREENS MAX WIDTH 480PX */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     body {
         width: 100vh;
     }
