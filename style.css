@@ -4,10 +4,10 @@
 html {
     font-family: var(--font-default);
     font-weight: 500;
+    width: 100%;
 }
 
 body {
-    max-width: 100%;
     background: var(--primary-light);
     color: var(--secondary-normal);
     overflow-x: hidden;
@@ -64,7 +64,7 @@ li {
         background-color: var(--secondary-normal);
         transition: width 0.3s ease;
     }
-
+    
     &:hover::after {
         width: 80%;
     }
@@ -105,6 +105,7 @@ li {
     text-shadow: 0.05rem 0.05rem 0.5rem rgba(0, 0, 0, 0.2);
     margin-top: 1.5rem;
     padding: 2rem;
+    gap: 10%;
 }
 
 .nav-profile-left {
@@ -159,7 +160,7 @@ li {
     color: var(--secondary-dark);
     display: flex;
     flex-direction: row;
-    padding: 1rem 2.5rem;
+    padding: 2.5rem 2.5rem;
 
     .quote {
         font-weight: 600;
@@ -287,7 +288,7 @@ main {
 }
 
 .about-picture > img {
-    width: 20rem;
+    width: 90%;
     margin-right: 2rem;
     border-radius: 0.5rem;
     box-shadow: 0.05rem 0.05rem 0.5rem rgba(0, 0, 0, 0.2);
@@ -315,14 +316,17 @@ main {
 }
 
 .about-content-title > p {
+    text-align: justify;
     margin-bottom: 1rem;
-    margin-left: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .features-icon {
-    column-count: 2;
+    column-count: 5;
     gap: 2rem;
     margin-top: 2rem;
+    margin-right: 5%;
 }
 
 .features-icon li {
@@ -458,11 +462,7 @@ footer {
 }
 
 /* SCREENS MAX WIDTH 758PX */
-@media screen and (max-width: 758px) {
-    body {
-        width: 100vh;
-    }
-
+@media screen and (max-width: 1120px) {
     .menu li {
         display: none;
     }
@@ -616,6 +616,7 @@ footer {
 
     .about-content {
         margin: 2rem 3rem;
+        text-wrap: pretty;
     }
 
     .about-picture {
@@ -657,7 +658,7 @@ footer {
 }
 
 /* SCREENS MAX WIDTH 480PX */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     body {
         width: 100vh;
     }
@@ -826,6 +827,8 @@ footer {
         column-gap: 1rem; /* Espaço entre as colunas */
         padding: 0rem;
         list-style-type: none;
+        margin: 0;
+        padding: 0;
     }
 
     .features-icon {
