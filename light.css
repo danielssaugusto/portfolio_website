@@ -1,0 +1,16 @@
+:root {
+    /* Light mode */
+    --primary-dark: darkblue;
+    --primary-light: #D9D0C7;
+
+    --secondary-normal: #D9D0C7;
+    --secondary-dark: rgb(1, 1, 96);
+    --secondary-light: #D9D0C7;
+
+   /* --primary-dark: #D9A679;
+   --primary-light: #D9D0C7;
+
+   --secondary-normal: #734636;
+   --secondary-dark: #734636;
+   --secondary-light: #D9D0C7; */
+}

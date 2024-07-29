@@ -3,31 +3,42 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const toggleButton = document.getElementById('theme-toggle');
     const body = document.body;
-
-    // Criação e atualização do elemento <img> no botão, se necessário
-    let imgElement = toggleButton.querySelector('img');
-    if (!imgElement) {
-        imgElement = document.createElement('img');
-        toggleButton.appendChild(imgElement);
-    }
+    const themeStylesheet = document.getElementById('theme-stylesheet');
 
     function updateButtonImage() {
+        const imgElement = toggleButton.querySelector('img');
+
         if (body.classList.contains('dark-mode')) {
             imgElement.src = 'assets/sun.png'; // Imagem para o modo claro
             imgElement.alt = 'Tema claro';
+            themeStylesheet.href = 'dark.css';
+            localStorage.setItem('item', 'dark');
         } else {
             imgElement.src = 'assets/moon.png'; // Imagem para o modo escuro
             imgElement.alt = 'Tema escuro';
+            themeStylesheet.href = 'light.css'
+            localStorage.setItem('theme', 'light')
         }
     }
 
+    // Verifica o tema salvo no localStorage e aplica
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        body.classList.add('dark-mode');
+        themeStylesheet.href = 'dark.css';
+    } else {
+        body.classList.remove('dark-mode');
+        themeStylesheet.href = 'light.css';
+    }
+
+    // Atualiza o botão com a imagem correta
+    updateButtonImage();
+
+    // Adiciona o evento de clique para alternar o tema
     toggleButton.addEventListener('click', function() {
         body.classList.toggle('dark-mode');
         updateButtonImage();
     });
-
-    // Inicializa o botão com a imagem correta dependendo do tema atual
-    updateButtonImage();
 
     // Ajusta a taxa de reprodução do vídeo, se existir
     var video = document.getElementById('background-video');

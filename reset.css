@@ -22,27 +22,9 @@ a {
 }
 
 :root {
-     /* Light mode */
-    --primary-dark: #D9A679;
-    --primary-light: #D9D0C7;
-
-    --secondary-normal: #734636;
-    --secondary-dark: #734636;
-    --secondary-light: #D9D0C7;
-
     /* Google Fonts */
     --font-default: "Montserrat", sans-serif;
     --font-logo: "Lancelot";
     --font-nav: "Inter", sans-serif;
     --font-title: "Fira Sans", sans-serif;
-}
-
-/* Dark mode */
-.dark-mode {
-    --primary-dark: #181C26;
-    --primary-light: #A6998F;
-
-    --secondary-normal: #A6998F;
-    --secondary-dark: #181C26;
-    --secondary-light: #A6998F;
 }

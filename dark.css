@@ -1,0 +1,8 @@
+.dark-mode {
+    --primary-dark: #181C26;
+    --primary-light: #A6998F;
+
+    --secondary-normal: #A6998F;
+    --secondary-dark: #181C26;
+    --secondary-light: #A6998F;
+}
