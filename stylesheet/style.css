@@ -1,6 +1,4 @@
 @import url(reset.css);
-@import url(light.css);
-@import url(dark.css);
 
 /* STYLE: INDEX.HTML */
 html {
@@ -10,8 +8,6 @@ html {
 }
 
 body {
-    background: var(--primary-light);
-    color: var(--secondary-normal);
     overflow-x: hidden;
 }
 

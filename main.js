@@ -11,12 +11,12 @@ document.addEventListener('DOMContentLoaded', function() {
         if (body.classList.contains('dark-mode')) {
             imgElement.src = 'assets/sun.png'; // Imagem para o modo claro
             imgElement.alt = 'Tema claro';
-            themeStylesheet.href = 'dark.css';  
+            themeStylesheet.href = 'stylesheet/dark.css';  
             localStorage.setItem('theme', 'dark');
         } else {
             imgElement.src = 'assets/moon.png'; // Imagem para o modo escuro
             imgElement.alt = 'Tema escuro';
-            themeStylesheet.href = 'light.css'
+            themeStylesheet.href = 'stylesheet/light.css'
             localStorage.setItem('theme', 'light')
         }
     }
@@ -25,10 +25,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
         body.classList.add('dark-mode');
-        themeStylesheet.href = 'dark.css';
+        themeStylesheet.href = 'stylesheet/dark.css';
     } else {
         body.classList.remove('dark-mode');
-        themeStylesheet.href = 'light.css';
+        themeStylesheet.href = 'stylesheet/light.css';
     }
 
     // Atualiza o botão com a imagem correta
