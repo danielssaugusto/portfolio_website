@@ -14,3 +14,8 @@
    --secondary-dark: #734636;
    --secondary-light: #D9D0C7; */
 }
+
+body {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+}

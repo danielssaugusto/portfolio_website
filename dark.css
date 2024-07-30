@@ -6,3 +6,8 @@
     --secondary-dark: #181C26;
     --secondary-light: #A6998F;
 }
+
+body {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+}

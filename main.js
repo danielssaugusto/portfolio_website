@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (body.classList.contains('dark-mode')) {
             imgElement.src = 'assets/sun.png'; // Imagem para o modo claro
             imgElement.alt = 'Tema claro';
-            themeStylesheet.href = 'dark.css';
-            localStorage.setItem('item', 'dark');
+            themeStylesheet.href = 'dark.css';  
+            localStorage.setItem('theme', 'dark');
         } else {
             imgElement.src = 'assets/moon.png'; // Imagem para o modo escuro
             imgElement.alt = 'Tema escuro';
