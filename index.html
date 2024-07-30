@@ -9,55 +9,82 @@
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="shortcut icon" href="assets/logo-wolf.png" type="image/x-icon"> <!-- Favicon -->
     <title>Daniel Augusto</title>
-    <meta name="description" content="My personal page with my main projects">
+    <meta name="description" content="My personal page with my main projects.">
 </head>
 <body>
-    <header>
-        <section>
-            <span><a href="index.html">Daniel Augusto</a></span>
+    <header class="container">
+        <span class="logotype"><a href="index.html">Daniel Augusto</a></span>
 
-            <nav>
-                <ul>
-                    <li>about</li>
-                    <li>contacts</li>
-                    <li><a target="_blank" id="github" href="https://github.com/danielssaugusto" title="GitHub">GitHub</a></li>
-                </ul>
-            </nav>
+        <nav class="nav-container">
+            <ul>
+                <li>about</li>
+                <li>contacts</li>
+                <li><a target="_blank" id="github" href="https://github.com/danielssaugusto" title="GitHub">GitHub</a></li>
+            </ul>
+        </nav>
 
-            <button type="button" class="theme-switcher" id="theme switcher">
-                <img src="assets/moon.png" alt="Dark mode" title="Dark Mode">
-            </button>
-        </section>
+        <button type="button" class="theme-switcher" id="theme switcher">
+            <img src="assets/moon.png" alt="Dark mode" title="Dark Mode">
+        </button>
     </header>
 
-    <main>
-        <section>
-            <div>
-                <p>hi! i'm</p>
-                <h1>software engineer</h1>
-                <hr>
+    <main class="container">
+        <section class="cover-letter">
+            <main class="cover-letter-summary">
+                <div>
+                    <p class="greet">hi! i'm</p>
+                    <h1 class="job-title">software engineer</h1>
+                    <hr class="horizontal-row">
                 
-                <article>
-                    As a Software Engineering student who transitioned from the Computer Science program, it has been an enriching journey of knowledge expansion
-                </article>
-            </div>
+                    <article class="job-summary">
+                        As a Software Engineering student who transitioned from the Computer Science program, it has been an enriching journey of knowledge expansion
+                    </article>
+                </div>
+                <picture class="profile-picture">
+                    <img src="assets/Uncharted 4.jpeg" alt="Profile Picture">
+                </picture>
+            </main>
 
-            <picture>
-                <img src="assets/Uncharted 4.jpeg" alt="Profile Picture">
-            </picture>
+            <footer class="social-media">
+                <aside class="social-media-links">
+                    <ul class="social-media-icons">
+                        <li><a href="https://twitter.com/" target="_blank"><i class="devicon-twitter-original"></i></a></li>
+                        <li><a href="https://github.com/danielssaugusto" target="_blank"><i class="devicon-github-original"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/danielsaugusto/" target="_blank"><i class="devicon-linkedin-plain"></i></a></li>
+                    </ul>
+                </aside>
 
-            <footer>
-                <ul>
-                    <li><a href="https://twitter.com/" target="_blank"></a><i class="devicon-twitter-original"></i></li>
-                    <li><a href="https://github.com/danielssaugusto" target="_blank"></a><i class="devicon-github-original"></i></li>
-                    <li><a href="https://www.linkedin.com/in/danielsaugusto/" target="_blank"><i class="devicon-linkedin-plain"></i></a></li>
-                </ul>
+                <button type="button" class="action-button">know more</button>
+
+                <p class="quote">"Remember when you dreamed of getting where you are today."</p>
             </footer>
         </section>
+
+        <section class="portfolio-presentation">
+            <header class="portfolio-presentation-header">
+                <h2 class="portfolio-presentation-title">portfolio</h2>
+                <p class="portfolio-presentation-subtitle">Check out my main projects on GitHub</p>
+            </header>
+            
+            <main class="projects-container">
+                <div class="projects-container-card">
+                    <img src="assets/voice-assistant-image.png" alt="physical representation of the virtual assistant">
+                    <h2 class="project-highlight">voice assistant</h2>
+                    <p class="project-summary">
+                        My personal assistant...
+                    </p>
+                </div>
+            </main>
+        </section>
     </main>
-
-    <footer>
-
+    
+    <footer class="container">
+        <p class="copyright">Daniel Augusto ©️ 2024</p>
+        <ul class="social-media-icons">
+            <li><a href="https://twitter.com/" target="_blank"><i class="devicon-twitter-original"></i></a></li>
+            <li><a href="https://github.com/danielssaugusto" target="_blank"><i class="devicon-github-original"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/danielsaugusto/" target="_blank"><i class="devicon-linkedin-plain"></i></a></li>
+        </ul>
     </footer>
 </body>
 </html>
