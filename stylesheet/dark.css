@@ -7,7 +7,7 @@
     --secondary-light: #A6998F;
 }
 
-body {
+/* body {
     background-color: var(--primary-dark);
     color: var(--secondary-light);
-}
+} */
