@@ -40,18 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
         updateButtonImage();
     });
 
-    // Ajusta a taxa de reprodução do vídeo, se existir
-    var video = document.getElementById('background-video');
-    if (video) {
-        video.playbackRate = 0.8; // Ajusta a taxa de reprodução do vídeo
-    }
-
-    // Inicializa elementos parallax, se houver
-    var elems = document.querySelectorAll('.parallax');
-    if (elems.length > 0) {
-        var instances = M.Parallax.init(elems);
-    }
-
     // Adiciona evento de clique ao botão do GitHub
     const githubButton = document.getElementById('github');
     if (githubButton) {
@@ -65,4 +53,21 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    const containerHeader = document.getElementById('container-header');
+    let lastScrollTop = 0;
+
+    window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYoffset || this.document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            // Rolando para baixo
+            containerHeader.style.transform = 'translateY(-${Math.min(scrollTop, 100)}px)';
+        } else {
+            // Rolando para cima
+            containerHeader.style.transform = 'transformY(${Math.min(scrollTop, 100)}px)';
+        }
+
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop // Para evitar valores negativos
+    });
 });

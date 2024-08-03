@@ -5,29 +5,34 @@
     flex-direction: row;
     justify-content: space-around; /* Cria uma espaço entre os itens */
     align-items: center; /* Alinha os itens na vertical */
+    position: fixed; /* Fixa o cabeçalho no topo da página */
     height: 2.5rem;
+    width: 100%; /* Indica a largura do cabeçalho */
 
     background-color: transparent;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 
     /* Estilização do Logotipo */
-    .logotype {
+    .logotype > a {
         font-family: var(--font-logo);
-        font-size: 1rem;
-        font-weight: 600;
+        font-size: 1.5rem;
+        font-weight: 500;
         text-transform: uppercase;
     }
 
     /* Menu de navegação */
-    .nav-container > .nav-bar {
+    .nav-container > .nav-bar{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         gap: 1rem;
 
-        text-transform: uppercase;
-        font-family: var(--font-nav);
-        font-weight: 800;
+        
+        a {
+            font-family: var(--font-nav);
+            font-weight: 500;        
+            text-transform: uppercase;
+        }
     }
 
     .nav-bar > li > a {
@@ -62,5 +67,60 @@
 
     .theme-switcher > img {
         width: 1.5rem;
+    }
+}
+
+.cover-letter {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center; /* Centraliza os itens no centro do viewport */
+    
+    
+    .cover-letter-summary {
+        display: flex;
+        flex-direction: row;
+        margin: 10%;
+    }
+    
+    .greet {
+        font-family: var(--font-title);
+        font-weight: 400;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+    
+    .job-title {
+        font-family: var(--font-title);
+        font-weight: 500;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+    
+    .horizontal-row {
+        width: 10rem;
+        height: 0.15rem;
+        border: none;
+        background-color: var(--secondary-dark);
+    }
+    
+    .job-summary {
+        margin: 1rem 0rem 1rem 0rem;
+    }
+    
+    .profile-picture {
+        width: 20rem;
+        
+        img {
+            border-radius: 25rem;
+        }
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: space-around;
+        gap: 10rem;
     }
 }
