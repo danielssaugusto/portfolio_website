@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Código para inicializar elementos e eventos após o DOM estar completamente carregado
 
-    const toggleButton = document.getElementById('theme-toggle');
+    const toggleButton = document.getElementById('theme-switcher');
     const body = document.body;
     const themeStylesheet = document.getElementById('theme-stylesheet');
 
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let lastScrollTop = 0;
 
     window.addEventListener('scroll', function() {
-        const scrollTop = window.pageYoffset || this.document.documentElement.scrollTop;
+        const scrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
 
         if (scrollTop > lastScrollTop) {
             // Rolando para baixo
