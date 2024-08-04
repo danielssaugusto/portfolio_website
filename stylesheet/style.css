@@ -86,8 +86,8 @@ body {
 .cover-letter {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     height: 100vh;
-    justify-content: center; /* Centraliza os itens no centro do viewport */
     color: var(--secondary-light);
     
     .cover-letter-summary {
@@ -96,7 +96,7 @@ body {
         align-items: center;
         text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         margin-top: 3rem;
-        padding: 3rem;
+        padding:3rem;
     }
 
     .summary {
@@ -146,8 +146,6 @@ body {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-items: space-around;
-        gap: 10rem;
         background-color: var(--primary-light);
         padding: 2rem;
     }
@@ -202,6 +200,7 @@ body {
         box-shadow: 0rem 0.04rem 0.5rem rgba(0, 0, 0, 0.2);
         text-transform: uppercase;
         font-weight: bold;
+        margin-left: 10rem;
     
         &:hover {
             background-color: var(--primary-dark);
@@ -307,5 +306,29 @@ body {
         align-self: center;
         font-size: 1.2rem;
         gap: 1rem;
+    }
+}
+
+@media (max-width: 780px) {
+    .nav-container {
+        display: none;
+    }
+
+    .cover-letter {
+        height: 100%;
+    }
+
+    .profile-picture {
+        display: none;
+    }
+
+    .social-media {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0rem;
+    }
+
+    .portfolio-presentation {
+        height: 100%;
     }
 }
